@@ -1,0 +1,34 @@
+{
+  "name": "rollup-component-library",
+  "version": "0.0.1",
+  "description": "React component library",
+  "scripts": {
+    "rollup": "rollup --config rollup.config.js --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "react",
+    "rollup",
+    "components library",
+    "typescript"
+  ],
+  "author": "Vladislav Balabkin <vladislav.foxivich@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "react": "^18.2.0",
+    "rollup": "^3.11.0",
+    "rollup-plugin-dts": "^5.1.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
