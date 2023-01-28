@@ -1,4 +1,5 @@
 import React, { FC, ButtonHTMLAttributes } from "react"
+import "./Button.css"
 
 type ButtonProps = {
   children: React.ReactNode
