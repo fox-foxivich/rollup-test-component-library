@@ -3,6 +3,8 @@ import commonjs from "@rollup/plugin-commonjs"
 import typescript from "@rollup/plugin-typescript"
 import dts from "rollup-plugin-dts"
 import postcss from "rollup-plugin-postcss"
+import { babel } from "@rollup/plugin-babel"
+import path from "path"
 
 // @ts-ignore
 const packageJson = require("./package.json")
@@ -28,6 +30,7 @@ const config = [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
+      babel({ configFile: path.resolve(__dirname, "babel.config.js") }),
     ],
   },
   {
